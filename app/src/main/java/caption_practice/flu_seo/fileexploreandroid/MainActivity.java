@@ -19,9 +19,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private String root = getFilesDir().getAbsolutePath(); // 최상위 폴더
-    private String CurPath = getFilesDir().getAbsolutePath();
-    private ArrayList<String> itemFiles = new ArrayList<String>();
-    private ArrayList<String> pathFiles = new ArrayList<String>();
+    private String CurPath = getFilesDir().getAbsolutePath(); // 현재 탐색하는 폴더
+    private ArrayList<String> itemFiles = new ArrayList<String>(); // display되는 파일들
+    private ArrayList<String> pathFiles = new ArrayList<String>(); // display되는 파일들의 경로 + 이름
 
 
 
