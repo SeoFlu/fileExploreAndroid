@@ -43,9 +43,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<MyListItem> listAllItems=new ArrayList<MyListItem>();
     ArrayList<MyListItem> listDispItems=new ArrayList<MyListItem>();
 
-
-    private String root = getExternalFilesDir(); // 최상위 폴더
-    private String CurPath = getFilesDir().getAbsolutePath(); // 현재 탐색하는 폴더
+    private File f = getExternalFilesDir(null);
+    private String root = f.getPath(); // 최상위 폴더
+//    private String CurPath = getFilesDir().getAbsolutePath(); // 현재 탐색하는 폴더
+    private String CurPath = root;
     private ArrayList<String> itemFiles = new ArrayList<String>(); // display되는 파일들
     private ArrayList<String> pathFiles = new ArrayList<String>(); // display되는 파일들의 경로 + 이름
 
